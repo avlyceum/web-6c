@@ -7,49 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Work Sans", sans-serif;
-            font-size: 15px;
-            font-weight: normal;
-            line-height: 125%; /* 1.25 18.75px */
-        }
-        h1, h2, h3 {
-            font-family: "Crimson Text", serif;
-            font-weight: bold;
-            line-height: 125%;
-        }
-        h1 {
-            font-size: 40px;
-        }
-        h2 {
-            font-size: 32px;
-        }
-        h2 {
-            font-size: 28px;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-        }
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background-color: #74C69D;
-            color: #FFFFFF;
-        }
-        .subtitle {
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: darkseagreen;">
-    <header>
+    <header class="container">
         <a href="/">
             <img src="images/logo.svg" alt="Logo Start" width="187" />
         </a>
@@ -63,15 +24,19 @@
 
     <main>
 
-        <section class="hero">
-            <p class="subtitle">WELCOME</p>
-            <h1>Lorem ipsum dolor sit amet consectetur </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
-            <a href="#">Explore</a>
-            <img src="images/hero.png" alt="Team" width="300" />
+        <section class="hero container">
+            <div>
+                <p class="subtitle">WELCOME</p>
+                <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <a href="#">Explore</a>
+            </div>
+            <div class="hero__image">
+                <img src="images/hero.png" alt="Team" />
+            </div>
         </section>
 
-        <section>
+        <section class="container">
             <p>Partners</p>
             <h2>Lorem Ipsum Dolor</h2>
             <p>Lorem ipsum, dolor sit amet consectetur
@@ -82,7 +47,7 @@
             <a href="#">Learn more</a>  
         </section>
 
-        <section>
+        <section class="container">
             <article>
                 <h2>Lorem ipsum dolor sit amet consectetur </h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
@@ -97,7 +62,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="container">
             <p>Team</p>
             <h2>Our Talents</h2>
             <p>Lorem ipsum, dolor sit amet consectetur
@@ -129,7 +94,7 @@
 
     </main>
     
-    <footer>
+    <footer class="container">
         <nav>
             <a href="#fb">
                 <img src="images/social-fb.svg" alt="Facebook" />
