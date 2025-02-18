@@ -16,6 +16,8 @@
   --color-dark-75: rgba(33, 37, 41, 0.75);
   --color-dark-50: rgba(33, 37, 41, 0.5);
   --color-dark-25: rgba(33, 37, 41, 0.25);
+
+  --color-black: #000000;
 }
 
 body {
@@ -41,11 +43,49 @@ h2 {
   font-size: 28px;
 }
 
+/* Основні стилі */
 .container {
   max-width: 1180px;
   margin: 0 auto 0 auto;
 }
+.subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.button {
+  display: inline-block;
+  background-color: var(--color-white);
+  height: 48px;
+  line-height: 24px;
+  padding: 12px 48px;
+  text-decoration: none;
+  color: var(--color-black);
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: var(--color-white-75);
+}
+.button.button--dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+.button.button--dark:hover {
+  background-color: var(--color-dark-75);
+}
 
+/* Стилі для шапки */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+}
 header nav a {
   color: white;
   text-decoration: none;
@@ -54,18 +94,46 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-.hero {
+/* Стилі для головного блоку */
+.hero-wrapper {
   background-color: var(--color-primary);
+}
+.hero {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 120px;
+  padding-top: 125px;
+  padding-bottom: 80px;
+  margin-top: -85px;
 }
 .hero__image {
   width: 55%;
+  flex-shrink: 0;
 }
-.subtitle {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 5px;
+.hero__title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.hero__description {
+  color: var(--color-white-75);
+  margin-bottom: 24px;
+}
+
+/* Стилі для блоку партнерів */
+.partners {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.partners__title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.partners__logos {
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  padding: 55px 0;
 }
